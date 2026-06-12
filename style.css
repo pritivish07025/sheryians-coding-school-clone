@@ -1,0 +1,368 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color:black;
+}
+
+nav {
+    height: 70px;
+    width: 100%;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;           /* fix: left/right spacing */
+    color: white;
+}
+
+/* PART 1 — Logo */
+nav .part-1 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+nav .part-1 img {
+    height: 40px;              /* fix: img had no size */
+    width: auto;
+}
+
+/* PART 2 — Nav links with pill border */
+nav .part-2 {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.25);   /* fix: pill border */
+    border-radius: 10px;
+    padding: 5px 8px;
+}
+
+nav .part-2 a {
+    color: rgba(255, 255, 255, 0.65);
+    text-decoration: none;
+    font-size: 14px;
+    padding: 6px 16px;
+    border-radius: 999px;
+    transition: background 0.2s, color 0.2s;
+    white-space: nowrap;
+}
+
+nav .part-2 a:hover {
+    color:rgb(199, 108, 33);
+
+}
+
+/* PART 3 — Sign In button */
+nav .part-3 {
+    display: flex;
+    align-items: center;
+}
+
+nav .part-3 button {
+    height:30px;
+    width:60px;
+    background: transparent;
+    border: none;
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 14px;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+nav .part-3 button:hover {
+    background-color:rgb(199, 108, 33);
+    color:black;
+    border-radius:5px;
+}
+.sec{
+width:100%;
+height:600px;
+background-color:black;
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:30px;
+margin-top:80px;
+
+}
+.hero-1 {
+  background-color: #0e0603;
+ margin: 100px;
+}
+.tagline {
+  font-size: 13px;
+  font-weight: 600;
+  color: #e05a2b;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.hero-1 h1 {
+  font-size: 58px;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.1;
+  margin-bottom: 24px;
+}
+.hero-1 p {
+  font-size: 20px;
+  color:rgba(255,255,255,0.35);
+  line-height: 1.7;
+  max-width: 520px;
+  margin-bottom: 36px;
+}
+.price-row {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+}
+.price-label { 
+    font-size: 28px; 
+    font-weight: 600;
+     color: #fff;
+     }
+
+.price-main  { 
+    font-size: 38px;
+     font-weight: 700; 
+     color: #e05a2b;
+     }
+.price-old   { 
+    font-size: 16px; 
+    color: rgba(255,255,255,0.35); 
+    text-decoration: line-through;
+ }
+.price-gst   { 
+    font-size: 15px;
+     color: rgba(255,255,255,0.35);
+     }
+
+.btn-1{
+    height:50px;
+    width:150px;
+    background-color: #e05a2b;
+    color:white;
+    border:1px solid  #d7b3a6;
+    border-radius:15px;
+}
+.btn-2{
+    height:50px;
+    width:150px;
+    background-color: #e9e2e2;
+    color:rgb(12, 10, 10);
+    border:1px solid  #d7b3a618;
+    margin:20px;
+    border-radius:15px;
+}
+
+
+.hero-2 img {
+    width: 100%;
+    height: 100%;
+    
+}
+
+/* style.css */
+.section {
+    background: #000;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.clip-text {
+    font-size: 180px;
+    font-weight: 900;
+    background-image: url('https://images.unsplash.com/photo-1781125724485-b101c7131213?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: center;
+
+    /* ↓ Yeh 3 lines image ko text ke andar clip karti hain */
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+.sub-text {
+    font-size: 40px;
+    color: white;
+    font-weight: 400;
+    margin-top: 16px;
+}
+
+.img{
+    height:600px;
+    width:80%;
+    margin-left:10%;
+    background-image:url(https://dfdx9u0psdezh.cloudfront.net/Visual-Icons/jobreadyGraphic.webp);
+    background-size:cover;
+    background-position:center;
+}
+
+/* style.css */
+.stats-section {
+    background: #0a0a0a;
+    padding: 60px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+
+/* Card — dark box with glowing border */
+.card {
+    background: #111;
+    border: 1.5px solid rgba(30, 120, 200, 0.5); /* blue border */
+    border-radius: 28px;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    /* glow effect */
+    box-shadow:
+        0 0 18px rgba(30, 120, 255, 0.2),   /* blue glow */
+        0 0 40px rgba(180, 60, 10, 0.15);   /* orange glow */
+}
+
+/* Number — image clipped to text */
+.card-num {
+    font-size: 70px;
+    font-weight: 800;
+    background-image: url(https://images.unsplash.com/photo-1781125724485-b101c7131213?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D); /* apni image */
+    background-size: cover;
+    background-position: center;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Label — same image clip */
+.card-label {
+    font-size: 40px;
+    font-weight: 900;
+    background-image: url(https://images.unsplash.com/photo-1781125724485-b101c7131213?q=80&w=1170&auto=format&fit=crop&lib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D); /* same image */
+    background-size: cover;
+    background-position: center;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* style.css */
+.comparison-section {
+    background: #000;
+    padding: 80px 40px;
+    text-align: center;
+   
+}
+
+/* Upar wala small tag */
+.tag {
+    display: inline-block;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.15em;       /* letter spacing */
+    text-transform: uppercase;    /* CAPITAL letters */
+    padding: 6px 16px;
+    border-radius: 4px;
+    margin-bottom: 28px;
+    background: rgba(80, 20, 10, 0.4);  /* dark brown tint */
+}
+
+/* Main heading */
+.comparison-section h1 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1.2;
+    max-width: 700px;
+    margin: 0 auto;        /* center align */
+}
+
+comparison-heading {
+    background: #000;
+    padding: 60px 40px 20px;
+    text-align: center;
+}
+ 
+.tag {
+    display: inline-block;
+    border: 1px solid rgba(255,255,255,0.25);
+    color: rgba(255,255,255,0.6);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    padding: 6px 16px;
+    border-radius: 4px;
+    margin-bottom: 28px;
+    background: rgba(80,20,10,0.4);
+}
+ 
+.comparison-heading h1 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1.2;
+    max-width: 700px;
+    margin: 0 auto;
+}
+ 
+/* ===================== COMPARISON LIST ===================== */
+.comp-section {
+    background: #000;
+    padding: 40px 60px 80px;
+     border: 2px solid rgb(112, 95, 95);
+}
+ 
+.comp-grid {
+    display: grid;
+    grid-template-columns: 1fr 1px 1fr;
+    gap: 0 60px;
+}
+ 
+.divider {
+    background: rgba(255,255,255,0.1);
+}
+ 
+.item {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    margin-bottom: 24px;
+}
+ 
+.icon {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    font-size: 14px;
+    margin-top: 2px;
+}
+ 
+.icon.green { border: 2px solid #22c55e; color: #22c55e; }
+.icon.red   { border: 2px solid #ef4444; color: #ef4444; }
+ 
+.item p {
+    font-size: 15px;
+    color: #fff;
+    line-height: 1.5;
+}
