@@ -1,4 +1,4 @@
-/* ============================================
+* ============================================
    SHERYIANS CODING SCHOOL — COMPLETE CSS
    ============================================ */
    * {
@@ -1363,3 +1363,417 @@ function toggleFaq(item) {
 }
 
 ============================================ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ============================================
+   RESPONSIVE MEDIA QUERIES
+   Add this at the VERY END of your style.css
+   ============================================ */
+
+/* ============================================
+   TABLET — screens up to 1024px
+   ============================================ */
+@media (max-width: 1024px) {
+
+  .sec {
+    flex-direction: column;
+    height: auto;
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .hero-1 {
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .hero-1 p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .price-row {
+    justify-content: center;
+  }
+
+  .hero-1 h1 {
+    font-size: 42px;
+  }
+
+  .clip-text {
+    font-size: 100px;
+  }
+
+  .sub-text {
+    font-size: 26px;
+  }
+
+  .img {
+    width: 90%;
+    margin-left: 5%;
+    height: 400px;
+  }
+
+  .stats-section {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .card {
+    width: 220px;
+    height: 220px;
+  }
+
+  .card-num {
+    font-size: 48px;
+  }
+
+  .card-label {
+    font-size: 24px;
+  }
+
+  .comparison-section h1 {
+    font-size: 32px;
+  }
+
+  .comp-grid {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .comp-grid .divider {
+    display: none;
+  }
+
+  .second-part {
+    flex-direction: column;
+  }
+
+  .prereq-outer {
+    flex: 1 1 100%;
+    width: 100%;
+  }
+
+  .cert-section {
+    grid-template-columns: 1fr;
+    margin: 0 20px 40px;
+  }
+
+  .cert-heading {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  .cert-points li {
+    text-align: left;
+  }
+
+  .footer-bottom {
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  }
+}
+
+/* ============================================
+   MOBILE — screens up to 768px
+   ============================================ */
+@media (max-width: 768px) {
+
+  /* ── NAVBAR ── */
+  nav {
+    height: auto;
+    flex-wrap: wrap;
+    padding: 12px 20px;
+    gap: 10px;
+    position: relative; /* unstick on mobile so it doesn't overlap content */
+  }
+
+  nav .part-2 {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    border: none;
+    padding: 8px 0 0;
+  }
+
+  nav .part-2 a {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+
+  body {
+    padding-top: 0; /* since nav is no longer fixed */
+  }
+
+  /* ── HERO ── */
+  .hero-1 h1 {
+    font-size: 30px;
+  }
+
+  .hero-1 p {
+    font-size: 15px;
+    max-width: 100%;
+  }
+
+  .price-row {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .price-main {
+    font-size: 28px;
+  }
+
+  .btn-1, .btn-2 {
+    width: 100%;
+    max-width: 220px;
+    margin: 8px auto;
+    display: block;
+  }
+
+  .hero-wrap {
+    padding: 16px;
+  }
+
+  .hero-card img {
+    height: 220px;
+  }
+
+  /* ── GET PLACED ── */
+  .clip-text {
+    font-size: 56px;
+  }
+
+  .sub-text {
+    font-size: 18px;
+  }
+
+  .img {
+    width: 95%;
+    margin-left: 2.5%;
+    height: 240px;
+  }
+
+  /* ── STATS ── */
+  .stats-section {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 280px;
+    height: 180px;
+  }
+
+  .card-num {
+    font-size: 40px;
+  }
+
+  .card-label {
+    font-size: 20px;
+  }
+
+  /* ── COMPARISON ── */
+  .comparison-section h1 {
+    font-size: 24px;
+  }
+
+  .comp-section {
+    padding: 24px 16px 40px;
+  }
+
+  .comp-grid {
+    padding: 24px 20px;
+  }
+
+  .item p {
+    font-size: 13px;
+  }
+
+  /* ── CURRICULUM ── */
+  .head h2 {
+    font-size: 22px;
+  }
+
+  .second-part {
+    padding: 16px 16px 40px;
+    gap: 20px;
+  }
+
+  .prereq-card {
+    padding: 20px;
+  }
+
+  .prereq-card h1 {
+    font-size: 20px;
+  }
+
+  .meta-row {
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+
+  .modules-wrap {
+    min-width: 0;
+    width: 100%;
+  }
+
+  .module-card {
+    padding: 16px 18px;
+  }
+
+  .module-title {
+    font-size: 15px;
+  }
+
+  .module-desc {
+    font-size: 12.5px;
+  }
+
+  /* ── CERTIFICATE ── */
+  .comp h1 {
+    font-size: 22px;
+  }
+
+  .cert-section {
+    margin: 0 16px 30px;
+  }
+
+  .cert-left {
+    padding: 28px 22px;
+  }
+
+  .cert-heading {
+    font-size: 22px;
+  }
+
+  .cert-right {
+    padding: 20px;
+  }
+
+  /* ── FAQ ── */
+  .faq-heading {
+    font-size: 22px;
+  }
+
+  .faq-question p {
+    font-size: 13.5px;
+  }
+
+  .faq-answer p {
+    font-size: 12.5px;
+  }
+
+  /* ── CTA ── */
+  .cta-section {
+    min-height: 320px;
+    padding: 40px 16px;
+  }
+
+  .cta-heading {
+    font-size: 22px;
+  }
+
+  .cta-brand {
+    font-size: 22px;
+    padding: 4px 14px 6px;
+  }
+
+  .cta-btn {
+    padding: 12px 28px;
+    font-size: 14px;
+  }
+
+  /* Hide floating cards on small screens to avoid clutter */
+  .float-card {
+    display: none;
+  }
+
+  /* ── FOOTER ── */
+  .footer-giant {
+    font-size: 60px;
+    text-align: center;
+  }
+
+  .footer-bottom {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    padding: 28px 24px 36px;
+    text-align: center;
+  }
+
+  .footer-logo-col {
+    align-items: center;
+  }
+
+  .social-row {
+    justify-content: center;
+  }
+}
+
+/* ============================================
+   SMALL MOBILE — screens up to 480px
+   ============================================ */
+@media (max-width: 480px) {
+
+  .hero-1 h1 {
+    font-size: 26px;
+  }
+
+  .clip-text {
+    font-size: 40px;
+  }
+
+  .sub-text {
+    font-size: 15px;
+  }
+
+  .price-main {
+    font-size: 22px;
+  }
+
+  .card {
+    height: 150px;
+  }
+
+  .card-num {
+    font-size: 32px;
+  }
+
+  .card-label {
+    font-size: 16px;
+  }
+
+  .cert-course-title {
+    font-size: 17px;
+  }
+
+  .footer-giant {
+    font-size: 42px;
+  }
+}
